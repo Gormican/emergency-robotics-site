@@ -1,22 +1,25 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Emergency Robotics — Deck</title>
+<title>Emergency Robotics</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="header"><div class="container">
-  <div class="brand">Emergency Robotics</div>
   <nav class="nav">
-    <a class="btn primary" href="index.html">All Pages</a>
-    <a class="btn" href="assets/Emergency-Robotics.pdf" target="_blank">Open PDF</a>
+    <div class="nav-left">
+      <div class="brand">Emergency Robotics</div>
+      <a href="index.html">Home</a>
+    </div>
+    <div class="nav-right">
+      <a href="pages.html">Deck Pages</a>
+      <a href="assets/Emergency-Robotics.pdf" target="_blank">Slide PDF</a>
+      <a href="mailto:steve@gormicans.com">Contact</a>
+    </div>
   </nav>
 </div></header>
-
-<main class="container">
-  <h1>Deck Pages</h1>
-  <div class="grid">
-    <div class="card"><a href="page-1.html">Page 1</a></div><div class="card"><a href="page-2.html">Page 2</a></div><div class="card"><a href="page-3.html">Page 3</a></div><div class="card"><a href="page-4.html">Page 4</a></div><div class="card"><a href="page-5.html">Page 5</a></div><div class="card"><a href="page-6.html">Page 6</a></div><div class="card"><a href="page-7.html">Page 7</a></div><div class="card"><a href="page-8.html">Page 8</a></div><div class="card"><a href="page-9.html">Page 9</a></div><div class="card"><a href="page-10.html">Page 10</a></div><div class="card"><a href="page-11.html">Page 11</a></div><div class="card"><a href="page-12.html">Page 12</a></div>
-  </div>
+<main class="main container">
+  <img class="hero" src="assets/home-hero.svg" alt="Emergency Robotics hero">
 </main>
-<footer class="footer"><div class="container">© Emergency Robotics</div></footer>
+<footer class="footer"><div class="container">© <span id="year"></span> Emergency Robotics</div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body></html>
