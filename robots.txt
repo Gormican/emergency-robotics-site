@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Point crawlers to your XML sitemap
 Sitemap: https://emergency-robotics.com/sitemap.xml
