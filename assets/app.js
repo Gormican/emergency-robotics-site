@@ -9,13 +9,8 @@
   const nextEl = document.getElementById('nextLink');
   if(prevEl) prevEl.href = prev;
   if(nextEl) nextEl.href = next;
-  // highlight desktop nav
   const links = document.querySelectorAll('.menu a');
-  links.forEach(a => {
-    const href = a.getAttribute('href');
-    if(href === path || (path==="index.html" && href==="index.html")) a.classList.add('current');
-  });
-  // overlay menu
+  links.forEach(a => { const href = a.getAttribute('href'); if(href === path || (path==='index.html' && href==='index.html')) a.classList.add('current'); });
   const overlay = document.getElementById('overlayMenu');
   const openBtn = document.getElementById('menuBtn');
   const closeBtn = document.getElementById('closeMenu');
