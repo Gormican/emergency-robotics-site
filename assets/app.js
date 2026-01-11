@@ -1,6 +1,6 @@
 
 (function(){
-  const order = ["index.html","problem.html","solution.html","roadmap.html","advisors.html","ceo.html","contact.html"];
+  const order = ["index.html","problem.html","solution.html","roadmap.html","advisors.html","team.html","contact.html"];
   const path = location.pathname.split('/').pop() || "index.html";
   const idx = order.indexOf(path) >= 0 ? order.indexOf(path) : 0;
   const prev = order[(idx - 1 + order.length) % order.length];
